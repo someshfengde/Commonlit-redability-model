@@ -45,7 +45,7 @@ def load_model():
 
 
 def get_prediction(textual_data, model):
-    predictions = model.predict(textual_data)
+    predictions = model.predict([textual_data])
     return predictions
 
 
