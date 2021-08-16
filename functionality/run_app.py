@@ -37,7 +37,7 @@ def load_model():
     base_layer = hub.KerasLayer(
         'https://tfhub.dev/google/experts/bert/wiki_books/sst2/2', trainable=False)
     download_file(file_path='bert_model.h5')
-    model = tf.keras.models.load_model("./bert_model.h5",
+    model = tf.keras.models.load_model("/app/commonlit-redability-model/bert_model.h5",
                                        custom_objects={
                                            "KerasLayer": base_layer
                                        })
