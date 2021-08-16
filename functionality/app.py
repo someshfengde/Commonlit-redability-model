@@ -17,14 +17,11 @@ if selected_title == 'Introduction':
     st.sidebar.success('To continue select Run app')
 
 elif selected_title == 'Run app >':
-    print('runapp')
-    # run_app()
+    run_app()
 
 elif selected_title == 'give feedback':
-    print('feedback')
-    # feedback()
+    feedback()
 
 elif selected_title == 'view source':
     show_sources()
     print('source_code')
-    # show_source()
