@@ -7,9 +7,9 @@ from show_source import *
 
 st.title('Commonlit Complexity Detection')
 
-selected_title = st.sidebar(
+selected_title = st.sidebar.selectbox(
     "Where would you like to go?",
-    ('Introduction', 'Run app >', 'give feedback', 'view source')
+    ['Introduction', 'Run app >', 'give feedback', 'view source']
 )
 
 if selected_title == 'Introduction':
@@ -17,10 +17,14 @@ if selected_title == 'Introduction':
     st.sidebar.success('To continue select Run app')
 
 elif selected_title == 'Run app >':
-    run_app()
+    print('runapp')
+    # run_app()
 
 elif selected_title == 'give feedback':
-    feedback()
+    print('feedback')
+    # feedback()
 
 elif selected_title == 'view source':
-    show_source()
+    show_sources()
+    print('source_code')
+    # show_source()
