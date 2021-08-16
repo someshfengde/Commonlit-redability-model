@@ -17,3 +17,8 @@
 
 ## General information: 
 
+> Model architecture : 
+![a]('./Images /train.png')
+
+> Our approach : 
+* with transfer extracting the embeddings of model for 
