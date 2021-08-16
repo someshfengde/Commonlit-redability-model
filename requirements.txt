@@ -1,4 +1,4 @@
-streamlit==0.84.0
+streamlit
 urllib
 tensorflow==2.5.0
 tensorflow_text==2.5.0
