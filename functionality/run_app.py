@@ -7,7 +7,7 @@ import tensorflow_hub as hub
 EXTERNAL_DEPENDENCIES = {
     "bert_model.h5": {
         "url": "https://drive.google.com/uc?id=1hGICINTrArHII2D7PIv9GCwlWk0MCpqY",
-        "size": 429009
+        "size": 429016
     }
 }
 
@@ -34,8 +34,13 @@ def download_file(file_path):
 
 def load_model():
     print('loading model called')
-    download_file(file_path='bert_model.5')
-    model = tf.keras.load_model("./bert_model.h5")
+    base_layer = hub.KerasLayer(
+        'https://tfhub.dev/google/experts/bert/wiki_books/sst2/2', trainable=False)
+    download_file(file_path='bert_model.h5')
+    model = tf.keras.models.load_model("./bert_model.h5",
+                                       custom_objects={
+                                           "KerasLayer": base_layer
+                                       })
     return model
 
 
@@ -46,7 +51,8 @@ def get_prediction(textual_data, model):
 
 def run_app():
     print('runapp called')
-    textual_data = st.text_input(label="enter the passage here", max_chars=500)
+    textual_data = st.text_area(
+        label="enter the passage here", max_chars=500, height=400)
     model = load_model()
     prediction = get_prediction(textual_data, model)
 
