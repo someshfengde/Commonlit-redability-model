@@ -1,5 +1,4 @@
-pip==21.2.4
-streamlit==0.86.0
+streamlit==0.84.0
 urllib
 tensorflow==2.5.0
 tensorflow_text==2.5.0
