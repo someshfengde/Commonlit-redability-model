@@ -15,7 +15,7 @@
 ## General information: 
 
 > Model architecture : 
-![a]('./Images /train.png')
+![]('https://github.com/someshfengde/Commonlit-redability-model/blob/master/Images%20/train.png')
 
 > Our approach : 
 * with transfer extracting the embeddings of textual data with bert transformer and fitting that to benefit our problem
