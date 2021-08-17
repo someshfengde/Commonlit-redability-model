@@ -18,7 +18,7 @@ def download_file(file_path):
         print(os.path.getsize('./' + file_path) ==
               EXTERNAL_DEPENDENCIES[file_path]["size"])
 
-        if os.path.getsize(file_path) == EXTERNAL_DEPENDENCIES[file_path]["size"]:
+        if os.path.getsize(file_path) >= EXTERNAL_DEPENDENCIES[file_path]["size"]-29016:
             st.warning('model already there haha')
             return
 
