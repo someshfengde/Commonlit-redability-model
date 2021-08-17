@@ -55,6 +55,14 @@ def run_app():
         label="enter the passage here", max_chars=500, height=400)
     model = load_model()
     prediction = get_prediction(textual_data, model)
-
-    st.write(prediction)
+    verdict = ""
+    if prediction <= -2:
+        verdict = "really complex passage you should pay more attention"
+    elif prediction <= -1:
+        verdict = "It's hard but hold on you can do it"
+    elif prediction <= 0:
+        verdict = "It's not much hard"
+    elif prediction > 0:
+        verdict = "Simple passage you got this! "
+    st.title(verdict)
     return prediction
