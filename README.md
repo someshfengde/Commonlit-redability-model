@@ -9,7 +9,7 @@
 
 ## Try our app on [streamlit](www.streamlit.com): 
 
-### **app launch link** [**launch app**]()
+### **app launch link** [**launch app**](https://share.streamlit.io/someshfengde/commonlit-redability-model/functionality/app.py)
 ### **notebook link** [click here for notebook](https://colab.research.google.com/drive/1sont1D2RIGuGcTSp3P1VtZ1mMK0EUgGW?usp=sharing)
 
 ## General information: 
