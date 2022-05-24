@@ -1,5 +1,5 @@
 streamlit
-tensorflow==2.5.2
+tensorflow==2.6.4
 tensorflow_text==2.5.0
 tensorflow_hub==0.12.0
 gdown==3.13.0
